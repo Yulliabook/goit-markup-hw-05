@@ -460,6 +460,59 @@ button {
   line-height: inherit;
   font-style: inherit;
 }
+.subscribe-conteiner {
+  margin-left: 80px;
+}
+.subscribe-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 16px;
+}
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.subscribe-input {
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  font-size: 12px;
+  color: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.subscribe-button {
+  border-radius: 4px;
+  max-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  border: none;
+  background: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 8px 24px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.send-image {
+  margin-left: 16px;
+}
 .backdrop {
   background: rgba(46, 47, 66, 0.4);
   position: fixed;
@@ -471,15 +524,44 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* opacity: 0;*/
-  transition: opacity 250ms ease-in-out;
+  /*opacity: 0;*/
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop .is-open {
   opacity: 1;
   pointer-events: all;
 }
-input {
+.model {
+  position: absolute;
+  border-radius: 4px;
+  width: 408px;
+  max-height: 584px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  background: #fcfcfc;
+  padding: 24px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.model-text {
   font-size: 12px;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+input {
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  font-size: 12px;
+  color: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  /*font-size: 12px;
   text-rendering: auto;
   color: fieldtext;
   letter-spacing: normal;
@@ -496,30 +578,14 @@ input {
   background-color: field;
   border-image: initial;
   padding-block: 1px;
-  padding-inline: 2px;
+  padding-inline: 2px;*/
 }
 input[type="checkbox" i] {
   background-color: initial;
   cursor: default;
   appearance: auto;
 }
-.model {
-  border-radius: 4px;
-  width: 408px;
-  height: 584px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
-    0 2px 1px 0 rgba(0, 0, 0, 0.2);
-  background: #fcfcfc;
-  padding: 24px;
-  position: relative;
-}
-.model-text {
-  font-size: 12px;
-  text-align: center;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  margin-bottom: 16px;
-}
+
 .form {
   display: flex;
   flex-direction: column;
