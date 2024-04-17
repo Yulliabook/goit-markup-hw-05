@@ -621,15 +621,11 @@ button {
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/*
-.form-icon:hover,
-.form-icon:focus,
-.form-icon:active {
-  fill: #404bbf;
-}*/
-.model-input:focus + .form-icon svg,
-.model-input:hover + .form-icon svg,
-.model-input:active + .form-icon svg {
+
+.modal-input:focus + .modal-field-icon {
+  fill: #4d5ae5;
+}
+.model-input:focus + .form-icon {
   fill: #4d5ae5;
 }
 
